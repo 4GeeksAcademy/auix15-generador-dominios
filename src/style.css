@@ -1,1 +1,70 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTc7dMjASWHqNW29QWMI3EC3AN7uUoX8cww&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+main {
+  flex: 1;
+}
+
+ol,
+h1,
+h2,
+p {
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Foldit", sans-serif;
+}
+
+#domainsContainer {
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#listaDeDominios {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#listaDeDominios li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

@@ -3,27 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>GENERATORS of DOMAINS</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzrsQYLV1UJ5QWmF79pTLJUrn13o13uWsVg&s"
+    />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <header class="bg-dark text-white p-3 text-center">
+      <h1>Bienvenidos a GENERATORS of DOMAINS</h1>
+    </header>
+    <main class="container mt-5">
+      <h2>¡Genera los mejores dominios para tu web!</h2>
+      <button id="generateBtn" class="btn btn-danger">Generar Dominio</button>
+      <ol id="listaDeDominios" class="mt-4"></ol>
+    </main>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+      <p>© 2024 GENERATORS | Todos los derechos reservados</p>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
